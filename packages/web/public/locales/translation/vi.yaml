@@ -617,12 +617,12 @@ setting:
     agent_enabled: Agent được bật
     language: Cài đặt ngôn ngữ
     language_help: Có thể thay đổi ngôn ngữ hiển thị
+    line_break_enter: Nhấn Enter để xuống dòng
     login_status: Trạng thái đăng nhập
     rag_enabled: RAG (Amazon Kendra) được bật
     rag_kb_enabled: RAG (Knowledge Base) được bật
     show_tools: Hiển thị công cụ
     show_use_case_builder: Hiển thị Use Case Builder
-    submit_cmd_or_ctrl_enter: ⌘ (ctrl) + Enter để gửi
     typing_animation: Hiệu ứng đánh máy
     version: Phiên bản
     version_help: Tham chiếu đến version trong package.json của generative-ai-use-cases

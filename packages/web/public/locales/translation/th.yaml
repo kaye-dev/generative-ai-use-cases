@@ -666,6 +666,7 @@ setting:
     agent_enabled: เปิดใช้งานตัวแทน
     language: ภาษา
     language_help: เปลี่ยนภาษาที่แสดง
+    line_break_enter: กด Enter เพื่อขึ้นบรรทัดใหม่
     login_status: สถานะการเข้าสู่ระบบ
     rag_enabled: เปิดใช้งาน RAG (Amazon Kendra)
     rag_kb_enabled: เปิดใช้งาน RAG (Knowledge Base)
@@ -673,7 +674,6 @@ setting:
     show_tools: แสดงเครื่องมือ
     show_use_case_builder: แสดง Use Case Builder
     stats: สถิติ
-    submit_cmd_or_ctrl_enter: ⌘ (ctrl) + Enter เพื่อส่ง
     typing_animation: แอนิเมชันการพิมพ์
     version: เวอร์ชัน
     version_help: อ้างอิงเวอร์ชันใน package.json ของ generative-ai-use-cases

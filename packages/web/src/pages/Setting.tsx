@@ -120,7 +120,7 @@ const Setting = () => {
         />
 
         <SettingItem
-          name={t('setting.items.submit_cmd_or_ctrl_enter')}
+          name={t('setting.items.line_break_enter')}
           value={
             <Switch
               checked={settingSubmitCmdOrCtrlEnter}

@@ -84,13 +84,20 @@ const Textarea: React.FC<Props> = (props) => {
 
           if (props.onEnter) {
             if (settingSubmitCmdOrCtrlEnter) {
-              // When cmd/ctrl+enter setting is enabled, send with cmd/ctrl+enter
-              if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) {
-                e.preventDefault();
-                props.onEnter();
+              // When line break mode is enabled, enter key creates new line and cmd/ctrl+enter sends message
+              if (navigator.platform.toLowerCase().includes('mac')) {
+                if (e.key === 'Enter' && e.metaKey) {
+                  e.preventDefault();
+                  props.onEnter();
+                }
+              } else {
+                if (e.key === 'Enter' && e.ctrlKey) {
+                  e.preventDefault();
+                  props.onEnter();
+                }
               }
             } else {
-              // Default behavior: send with enter (not shift+enter)
+              // Default behavior: send with enter (not cmd/ctrl+enter)
               if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 props.onEnter();
